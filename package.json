@@ -1,0 +1,32 @@
+{
+  "name": "dreambroker",
+  "version": "1.0.0",
+  "description": "Dreambroker's programming assignment by Denis Norrstrand",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/dnorrstrand/DreambrokerPA"
+  },
+  "keywords": [
+    "Dreambroker",
+    "programming",
+    "assignment"
+  ],
+  "author": "Denis Norrstrand",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}
