@@ -3,7 +3,14 @@ const app = express();
 require('dotenv').config();
 const bodyParser = require("body-parser");
 
+app.use(express.static('public'));
+
 app.use(bodyParser.json({ type: 'application/json' }));
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + "/index.html");
+})
 
 app.post('/analyze', (req, res) => {
 

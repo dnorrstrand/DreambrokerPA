@@ -2,12 +2,33 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Dreambroker Programming Assignment">
     <title>DreamBroker Programming Assignment by Denis Norrstrand</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 </head>
 <body>
-    <form class="sample-form" action="/analyze" method="post" target="_self">
-        <input type="text" name="text">
-        <button type="submit" name="submit">Submit</button>
-    </form>
+    <div class="center">
+        <h1>Dreambroker Programming Assignment</h1><br />
+        <p>
+            This is a web interface for testing the functionality of an API, which analyzes text srtings and returns statistics.
+            You can enter any text string into the input box below and press "ANALYZE". The API will return your text stats in the same window.
+        </p>
+        <p>The following CURL command can be used to test the API:</p>
+        <code class="code">
+            curl --location --request POST 'https://young-dusk-81991.herokuapp.com/analyze' \<br />
+            --header 'Content-Type: application/json' \<br / />
+            --data-raw '{"text":"Hello, world! Its a rainy day!!"}'
+        </code>
+        <form class="form" action="/analyze" method="post" target="_self">
+            <input type="text" name="text" class="input">
+            <button type="submit" name="submit" class="submit-button">ANALYZE</button>
+        </form>
+        <p class="footer">Design by Denis Norrstrand. All rights reserved. Helsinki, 2021.</p>
+    </div>
+
 </body>
+
 </html>
